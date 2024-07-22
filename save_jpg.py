@@ -1,3 +1,4 @@
+import os
 import mrcfile
 import numpy as np
 from PIL import Image
@@ -24,7 +25,11 @@ def mrc_to_jpg(mrc_path, jpg_path):
     # plt.show()
 
 # Example usage
+image_path = '/home/pc/Desktop/liposome/images'
+if not os.path.exists(image_path):
+            os.makedirs(image_path)
+
 for i in range(1, 10):
     mrc_path = '/home/pc/Desktop/liposome/stack_2nd_010'+str(i)+'_DW.mrc'  # Path to your MRC file
-    jpg_path = '/home/pc/Desktop/liposome/images/stack_2nd_010'+str(i)+'_DW.jpg'  # Desired output path for the JPEG file
+    jpg_path = image_path + '/stack_2nd_010'+str(i)+'_DW.jpg'  # Desired output path for the JPEG file
     mrc_to_jpg(mrc_path, jpg_path)
