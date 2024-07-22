@@ -2,8 +2,8 @@
 
 ## Setup
 
-1. Make a new folder named 'mrc', and put your mrc files here or change the paths in the code.
-2. Make a new folder named 'images', and use save_jpg.py to convert mrcfiles to jpgfiles here or change the paths in the code.
+1. Make a new folder named 'mrc' (or change the code by yourself), and put your mrc files here or change the paths in the code.
+2. Use save_jpg.py to convert mrcfiles to jpgfiles here or change the paths in the code.
 
 ## Get centers and radii
 
